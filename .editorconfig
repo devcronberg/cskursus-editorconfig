@@ -16,6 +16,9 @@ indent_size = 4
 # C# files
 [*.cs]
 
+# Access
+dotnet_style_require_accessibility_modifiers = always:warning
+
 # "This." and "Me." Qualification
 dotnet_style_qualification_for_field = true:warning
 dotnet_style_qualification_for_property = true:warning
