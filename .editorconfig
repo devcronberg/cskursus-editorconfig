@@ -94,7 +94,7 @@ csharp_preserve_single_line_blocks = false
 #####
 
 ## Name all constant fields using PascalCase
-dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = error
+dotnet_naming_rule.constant_fields_should_be_pascal_case.severity = warning
 dotnet_naming_rule.constant_fields_should_be_pascal_case.symbols  = constant_fields
 dotnet_naming_rule.constant_fields_should_be_pascal_case.style    = pascal_case_style
 dotnet_naming_symbols.constant_fields.applicable_kinds   = field
@@ -105,7 +105,7 @@ dotnet_naming_style.pascal_case_style.capitalization = pascal_case
 dotnet_naming_symbols.private_field_symbol.applicable_kinds = field
 dotnet_naming_symbols.private_field_symbol.applicable_accessibilities = private
 dotnet_naming_style.private_field_style.capitalization = camel_case
-dotnet_naming_rule.private_fields_are_camel_case.severity = error
+dotnet_naming_rule.private_fields_are_camel_case.severity = warning
 dotnet_naming_rule.private_fields_are_camel_case.symbols = private_field_symbol
 dotnet_naming_rule.private_fields_are_camel_case.style = private_field_style
 
@@ -113,7 +113,7 @@ dotnet_naming_rule.private_fields_are_camel_case.style = private_field_style
 dotnet_naming_symbols.non_private_field_symbol.applicable_kinds = field
 dotnet_naming_symbols.non_private_field_symbol.applicable_accessibilities = public,internal,friend,protected,protected_internal,protected_friend
 dotnet_naming_style.non_private_field_style.capitalization = pascal_case
-dotnet_naming_rule.non_private_fields_are_pascal_case.severity = error
+dotnet_naming_rule.non_private_fields_are_pascal_case.severity = warning
 dotnet_naming_rule.non_private_fields_are_pascal_case.symbols = non_private_field_symbol
 dotnet_naming_rule.non_private_fields_are_pascal_case.style = non_private_field_style
 
@@ -127,7 +127,7 @@ dotnet_naming_rule.parameters_are_camel_case.style = parameter_style
 ## Non-interface types must use PascalCase
 dotnet_naming_symbols.non_interface_type_symbol.applicable_kinds = class,struct,enum,delegate
 dotnet_naming_style.non_interface_type_style.capitalization = pascal_case
-dotnet_naming_rule.non_interface_types_are_pascal_case.severity = error
+dotnet_naming_rule.non_interface_types_are_pascal_case.severity = warning
 dotnet_naming_rule.non_interface_types_are_pascal_case.symbols = non_interface_type_symbol
 dotnet_naming_rule.non_interface_types_are_pascal_case.style = non_interface_type_style
 
@@ -135,14 +135,14 @@ dotnet_naming_rule.non_interface_types_are_pascal_case.style = non_interface_typ
 dotnet_naming_symbols.interface_type_symbol.applicable_kinds = interface
 dotnet_naming_style.interface_type_style.capitalization = pascal_case
 dotnet_naming_style.interface_type_style.required_prefix = I
-dotnet_naming_rule.interface_types_must_be_prefixed_with_I.severity = error
+dotnet_naming_rule.interface_types_must_be_prefixed_with_I.severity = warning
 dotnet_naming_rule.interface_types_must_be_prefixed_with_I.symbols = interface_type_symbol
 dotnet_naming_rule.interface_types_must_be_prefixed_with_I.style = interface_type_style
 
 ## Methods, Properties, and Events must use PascalCase
 dotnet_naming_symbols.member_symbol.applicable_kinds = method,property,event
 dotnet_naming_style.member_style.capitalization = pascal_case
-dotnet_naming_rule.members_are_pascal_case.severity = error
+dotnet_naming_rule.members_are_pascal_case.severity = warning
 dotnet_naming_rule.members_are_pascal_case.symbols = member_symbol
 dotnet_naming_rule.members_are_pascal_case.style = member_style
 
